@@ -1,0 +1,5 @@
+1.Leia e armazene n
+2.Subtrair n-1 e armazenar como n1
+3.Subtrair 10-n e armazenar como n2
+4.Realize a expressão (n1x10)+n2 e armazene em r
+5.Apresente r
