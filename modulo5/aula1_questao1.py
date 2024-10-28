@@ -1,0 +1,5 @@
+num1 = float(input("Digite um número decimal: "))
+num2 = float(input("Digite outro número decimal: "))
+dif = abs(num1 - num2)
+total = round(dif, 2)
+print("A diferença entre os números é: {}".format(total))
