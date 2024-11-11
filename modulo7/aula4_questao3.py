@@ -1,0 +1,15 @@
+import re
+with open("estomago.txt", "r", encoding="ISO-8859-1") as file:
+    linhas=file.readlines()
+primeiras25Linhas=''.join(linhas[:25])
+print("Texto das primeiras 25 linhas:")
+print(primeiras25Linhas)
+numeroLinhas=len(linhas)
+print("Número de linhas do arquivo: {}".format(numeroLinhas))
+linhaMaiorCaracteres=max(linhas,key=len).strip()
+print("Linha com maior número de caracteres: {}".format(linhaMaiorCaracteres))
+textoCompleto=''.join(linhas)
+mencoesNonato=len(re.findall(r'\bNonato\b', textoCompleto,re.IGNORECASE))
+mencoesIria=len(re.findall(r'\bÍria\b', textoCompleto,re.IGNORECASE))
+print("Número de menções ao nome 'Nonato': {}".format(mencoesNonato))
+print("Número de menções ao nome 'Íria': {}".format(mencoesIria))
